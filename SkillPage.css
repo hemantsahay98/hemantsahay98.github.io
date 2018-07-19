@@ -1,0 +1,118 @@
+body{
+    margin: 0px;
+    overflow: hidden;
+}
+#background{
+    height: 650px;
+    width:  9000px;
+    background-image: url("pictures/SYY2mJz.png");
+    background-size: auto 100%;
+}
+#resume{
+    position: fixed;
+    left: 35%;
+    top: -60px;
+    
+    z-index: 5;
+}
+#resume img{ 
+    height: 200px;
+    width: 400px;
+}
+#board1{
+    position: absolute;
+    bottom: 100px;
+    left: 15%;
+    
+}
+#board1 #focus{
+    position: absolute;
+    bottom: 100px;
+    left: 30%;
+    font-size: 20px;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    color: white;
+    animation-name: click;
+     animation-duration: 0.5s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+}
+@keyframes click{
+    to{
+        color: red;
+        transform: scale(1.5);
+    }
+}
+
+#board1 a{
+    position: absolute;
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    top: 50px;
+    left: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 5px;
+    border-radius: 30px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    background-color: cornflowerblue
+}
+#board2{
+    position: absolute;
+    bottom: 100px;
+    left: 99%;
+    visibility: hidden;
+    
+}
+#board2 #focus{
+    position: absolute;
+    bottom: 100px;
+    left: 30%;
+    font-size: 20px;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    color: white;
+    animation-name: click2;
+     animation-duration: 0.5s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+    
+}
+@keyframes click2{
+    to{
+        color: red;
+        transform: scale(1.5);
+    }
+}
+
+#board2 a{
+    position: absolute;
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    top: 50px;
+    left: 55px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 5px;
+    border-radius: 30px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    background-color: cornflowerblue
+}
+#player{
+    position: fixed;
+    bottom: 100px;
+    left: 510px;
+}
+#player img{
+    height: 100px;
+    width: 80px;
+}

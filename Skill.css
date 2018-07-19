@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+    background-color:#F7F7F7;
+    overflow: hidden;
+}
+#skill{
+    background-color: grey;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 3px;
+     animation-name: topic;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+@keyframes topic{
+    from{
+        transform: translateY(-70px);
+    }
+   }
+.study{
+    margin-top: 40px;
+    margin-left: 100px;
+    height: 60px;
+    width: 70%;
+    background-color: azure;
+    border-bottom-right-radius:30px;
+    border-top-right-radius: 30px;
+    border-left: 5px solid #1170D3;
+    box-shadow: 10px 10px 15px grey;
+     animation-name: box;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+@keyframes box{
+    from{
+        transform: translateX(-1100px);
+        background-color: blue;
+    }
+   
+}
+.study span{
+    margin-top: 15%;
+     padding-left: 15px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 3px 1px gainsboro;
+}
+#exit{
+    margin-left: 80%;
+    position: absolute;
+    bottom: 55px;
+     animation-name: exit;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+@keyframes exit{
+    from{
+        transform: translateY(100px);
+    }
+}
+.study:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+}
+#exit a{
+    background-color: #02AA63;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px grey;
+}

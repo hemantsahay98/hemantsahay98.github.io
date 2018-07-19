@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+    background-image: url("pictures/251850.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#header{
+    background-color: black;
+    opacity: 0.5;
+    height: 80px;.
+    
+}
+#header img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+#container{
+    margin-top: 100px;
+}
+#profileimg img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+#profileimg{
+    text-align: center;
+    margin-top: 45px;
+}
+#intro{
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+#intro #hii{
+    margin-right: 10px
+}
+#intro #name{
+    font-weight: bold;
+}
+#edu{
+   color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+#edu #course{
+   
+}
+#edu #year{
+
+}
+#collage{
+   color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 15px;
+}
+#button{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background-color: #DD6620;
+    border-radius: 30px;
+    margin-left: 580px;
+    margin-top: 20px;
+}
+#button:hover{
+    background-color:darkblue;
+}
+#button span{
+    position: absolute;
+    left: 600px;
+    top: 395px;
+    
+}
+#button a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    
+    
+}
