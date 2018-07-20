@@ -1,10 +1,13 @@
 body{
     margin: 0px;
-    background-color:#F7F7F7;
+    background-image: url(pictures/park2.jpg);
     overflow: hidden;
+      background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #skill{
-    background-color: grey;
+    background-color: rgb(0,0,0,0.3);
     height: 50px;
     text-align: center;
     color: white;
@@ -17,7 +20,7 @@ body{
 }
 @keyframes topic{
     from{
-        transform: translateY(-70px);
+        transform: scale(0);
     }
    }
 .study{
@@ -30,16 +33,7 @@ body{
     border-top-right-radius: 30px;
     border-left: 5px solid #1170D3;
     box-shadow: 10px 10px 15px grey;
-     animation-name: box;
-    animation-duration: 2s;
-    animation-direction: normal;
-    animation-iteration-count: 1;
-}
-@keyframes box{
-    from{
-        transform: translateX(-1100px);
-        background-color: blue;
-    }
+     
    
 }
 .study span{
@@ -54,13 +48,16 @@ body{
     position: absolute;
     bottom: 55px;
      animation-name: exit;
-    animation-duration: 2s;
+    animation-duration: 15s;
     animation-direction: normal;
     animation-iteration-count: 1;
 }
 @keyframes exit{
-    from{
-        transform: translateY(100px);
+    0%{
+        transform: scale(0);
+    }
+    80%{
+        transform: scale(0);
     }
 }
 .study:hover{
@@ -76,4 +73,32 @@ body{
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
     box-shadow: 0px 5px 10px grey;
+}
+#hardware{
+    animation: box 4s;
+}
+#language{
+    animation: box2 8s;
+}
+#work{
+       animation: box3 11s;
+
+}
+@keyframes box{
+    0%{
+        transform: translateX(-1200px);
+    }
+    30%{ transform: translateX(-1200px);}
+}
+@keyframes box2{
+     0%{
+        transform: translateX(2200px);
+    }
+    40%{ transform: translateX(2200px);}
+}
+@keyframes box3{
+      0%{
+        transform: translateX(-1200px);
+    }
+    60%{ transform: translateX(-1200px);}
 }

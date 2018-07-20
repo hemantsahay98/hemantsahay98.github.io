@@ -22,7 +22,7 @@ function check_key(){
     if(key == 39){
         player.style.transform = 'rotateY(0deg)';
         player.innerHTML = ' <img src="pictures/mariorun.gif" alt="">';
-       
+       if( count>=4)
         changepos();
     }
     else if(key==37){

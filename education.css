@@ -2,9 +2,17 @@ body{
     margin: 0px;
     background-color:#F7F7F7;
     overflow: hidden;
+}body{
+    margin: 0px;
+    background-image: url(pictures/park2.jpg);
+    overflow: hidden;
+      background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #education{
-    background-color: grey;
+    background-color: rgb(0,0,0,0.3);
+    
     height: 50px;
     text-align: center;
     color: white;
@@ -17,7 +25,7 @@ body{
 }
 @keyframes topic{
     from{
-        transform: translateY(-70px)
+        transform: scale(0);
     }
    }
 .study{
@@ -25,24 +33,15 @@ body{
     margin-left: 100px;
     height: 170px;
     width: 70%;
-    background-color: azure;
+    background-color: rgb(206, 234, 178);
     border-bottom-right-radius:30px;
     border-top-right-radius: 30px;
-    border-left: 5px solid #1170D3;
+    border-left: 5px solid green;
     box-shadow: 10px 10px 15px grey;
-    animation-name: box;
-    animation-duration: 2s;
-    animation-direction: normal;
-    animation-iteration-count: 1;
+  
 }
 
-@keyframes box{
-    from{
-        transform: translateX(-1100px);
-        background-color: darkblue;
-    }
-   
-}
+
 .study:hover{
     transition-duration: 0.5s;
     transform: scale(1.1);
@@ -52,18 +51,22 @@ body{
     position: absolute;
     bottom: 55px;
     animation-name: exit;
-    animation-duration: 2s;
+    animation-duration: 15s;
     animation-direction: normal;
     animation-iteration-count: 1;
     
 }
 @keyframes exit{
-    from{
-        transform: translateY(100px);
+    0%{
+        transform: scale(0);
+    }
+    80%{
+        transform: scale(0);
     }
 }
 #exit a:hover{
     background-color: royalblue;
+    color: black;
 }
 #exit a{
     background-color: #02AA63;
@@ -74,23 +77,24 @@ body{
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
     box-shadow: 0px 5px 10px grey;
+    transition-duration: 1s;
 }
 #tenth{
     text-align-last: center;
     font-size: 25px;
-    background-color:deepskyblue;
+    background-color:rgb(145, 229, 66);
     color: white;
 }
 #twelth{
     text-align-last: center;
     font-size: 25px;
-    background-color:deepskyblue;
+    background-color:rgb(145, 229, 66);
     color: white;
 }
 #btech{
     text-align-last: center;
     font-size: 25px;
-    background-color:deepskyblue;
+    background-color:rgb(145, 229, 66);
     color: white;
 }
 
@@ -119,14 +123,31 @@ body{
     text-shadow: 1px 3px 1px gainsboro;
     
 }
-.study span{
-    animation-name: contents;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
+#primary{
+    animation: box 4s;
 }
-@keyframes content{
-    from{
-        transform: translateX(1000px);
+#high{
+    animation: box2 8s;
+}
+#collage{
+       animation: box3 11s;
+
+}
+@keyframes box{
+    0%{
+        transform: translateX(-1200px);
     }
+    30%{ transform: translateX(-1200px);}
+}
+@keyframes box2{
+     0%{
+        transform: translateX(2200px);
+    }
+    40%{ transform: translateX(2200px);}
+}
+@keyframes box3{
+      0%{
+        transform: translateX(-1200px);
+    }
+    60%{ transform: translateX(-1200px);}
 }

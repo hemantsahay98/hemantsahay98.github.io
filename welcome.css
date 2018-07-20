@@ -64,7 +64,7 @@ body{
     text-align: center;
     margin-left: 15px;
 }
-#button{
+/*#button{
     text-align: center;
     width: 200px;
     height: 50px;
@@ -81,11 +81,21 @@ body{
     left: 600px;
     top: 395px;
     
+}*/
+#button{
+    margin-top: 30px;
+    text-align: center;
 }
 #button a{
-    text-decoration: none;
-    font-size: 30px;
+    background-color: darkblue;
     color: white;
-    
-    
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px grey; 
+    transform: 1s;
+}
+#button a:hover{
+    background-color: #02AA63;
 }

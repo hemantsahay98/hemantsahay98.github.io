@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+    overflow: hidden;
+}
+#background{
+   height: 650px;
+    width:  9000px;
+    background-image: url("pictures/SYY2mJz.png");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#thank{
+    text-align: center;
+    position: absolute;
+    bottom: 300px;
+    left: 500px;
+    font-size: 80px;
+   
+}
+
+
+#thanks{
+   background-color: white;
+    padding: 10px 10px 0px 10px;
+    color: green;
+}
+#you{
+      background-color: green;
+    padding: 3px 10px 0px 10px;
+    color: white;
+}
+
+
+#left{
+    position: absolute;
+    background-color: rgb(0,0,0,0.5);
+    height: 100%;
+    width: 30%;
+    bottom: 0%;
+    padding-top: 50px;
+}
+#right{
+  position: absolute;
+    background-color: rgb(0,0,0,0.5);
+    height: 100%;
+    width: 30%;
+    bottom: 0%; 
+    left: 70%;
+}
+#personal{
+    margin-top: 150px;
+}
+.detail a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    font-size: 23px;
+   transform: translate(60px,40px);
+}
+.detail{
+    transition-duration: 0.5s;
+}
+.detail:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.detail img{
+    height: 60px;
+    width: 350px;
+    padding-top: 20px;
+    padding-left: 25px;
+   }
+#profile{
+    width: 350px;
+    margin-left: 20px;
+}
+#personal{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: fantasy;
+    transform: translate(120px,-130px);
+}
+#visit img{
+    width: 350px;
+    margin-left: 20px;
+}
+#visit a{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    transform: translate(-280px,20px);
+}
+#visit a img{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    transform: translate(80px,-110px);
+    transition-duration: 0.5s;
+}
+#visit{
+    transition-duration: 0.5s;
+}
+#visit:hover{
+    transform: scale(1.1);
+}
+#notice a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    text-decoration: underline;
+   transform: translate(100px,35px);
+}
+
+#notice img{
+    height: 60px;
+    width: 350px;
+    padding-top: 20px;
+    padding-left: 25px;
+   }

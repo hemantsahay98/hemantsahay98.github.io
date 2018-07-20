@@ -1,0 +1,12 @@
+#div{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    animation: ani2s;
+}
+@keyframes anim{
+    0%{
+       transform: translateX(-500px)
+    }
+    
+}

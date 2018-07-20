@@ -12,8 +12,17 @@ body{
     position: fixed;
     left: 35%;
     top: -60px;
-    
     z-index: 5;
+    animation-name: resume;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+@keyframes resume{
+    from{
+        transform: scale(0);
+        
+    }
 }
 #resume img{ 
     height: 200px;
@@ -58,7 +67,7 @@ body{
     animation-iteration-count: infinite;
 }
 @keyframes direction{
-    to{
+    0%{
         color: transparent;
     }
 }
@@ -84,15 +93,51 @@ body{
     position: absolute;
     top: 25%;
     left: 10%;
-    z-index: 4;
+    z-index: 4; 
+    animation-name: player1;
+    animation-duration: 4s;
+    animation animation-iteration-count: 1;
+    animation-direction: normal;
+    visibility: visible;
+}
+@keyframes player1{
+    0%{
+        transform: translateX(-600px);
+    }
+    10%{transform: translateX(-600px);}
+    20%{
+        transform: translateX(-600px);
+    }
+    40%{
+        transform: translateX(-600px);
+    }
+    
+  
 }
 #hemant{
     position: absolute;
-    top: 33%;
-    left: 13%;
-    height: 33%;
-    width: 25%;
-    z-index: 5;
+    top: 35%;
+    left: 15%;
+    height: 30%;
+    width: 20%;
+    z-index: 5; animation-name: player2;
+    animation-duration: 5s;
+    animation animation-iteration-count: 1;
+    animation-direction: normal;
+}
+@keyframes player2{
+     
+     0%{
+        transform: translateY(500px);
+    }
+    10%{transform: translateY(500px);}
+    20%{
+        transform: translateY(500px);;
+    }
+    60%{
+        transform: translateY(500px);;
+    }
+    
 }
 #name #stand{
     position: absolute;
@@ -105,7 +150,19 @@ body{
 #player{
     position: fixed;
     bottom: 100px;
-    left: 510px;
+    left: 630px; 
+    animation-name: player;
+    animation-duration: 6s;
+    animation animation-iteration-count: 1;
+    animation-direction: normal;
+}
+@keyframes player{
+    0%{
+        transform: translateY(-1000px);
+    }
+    80%{
+        transform: translateY(-1000px);
+    }
 }
 #player img{
     height: 100px;

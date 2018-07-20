@@ -1,7 +1,8 @@
 window.addEventListener("load",init);
-
+var speed = 10;
 var move = 10;
 var moveBoard1 = 10;
+var moveBoard2 = 10;
 var count = 100;
 function init(){
 
@@ -9,13 +10,8 @@ function init(){
     screen_bg = document.getElementById("background");
     player = document.getElementById("player");
     board1 = document.getElementById("board1");
-    focus = document.getElementById("focus");
-    stand = document.getElementById("name");
-    hemant = document.getElementById("hemant");
-    direction = document.getElementById("direction");
-     setTimeout(function(){
-            player.innerHTML = '<img src="pictures/153185578878303419.gif" alt="">';
-        },1000);
+    board2 = document.getElementById("board2");
+    focus = document.getElementById("focus")
     screen.addEventListener("keydown",check_key);
     screen.addEventListener("keyup",change_image);
     
@@ -42,30 +38,30 @@ function change_image(){
 }
 function changeposback(){
      screen_bg.style.transform = 'translateX('+(-move)+"px"+')';
-    stand.style.transform = 'translateX('+(-move)+"px"+')';
-     hemant.style.transform = 'translateX('+(-move)+"px"+')';
     move = move - 10;
-     if(count<=80){
+   
         board1.style.transform = 'translateX('+(-moveBoard1)+"px"+')';
        moveBoard1 = moveBoard1 - 10;
+     if(count<=80){
+        board2.style.transform = 'translateX('+(-moveBoard2)+"px"+')';
+       moveBoard2 = moveBoard2 - 10;
    }
     if(count>80)
-         board1.style.visibility = "hidden";
+         board2.style.visibility = "hidden";
     count++;
 }
 function changepos(){
     
      screen_bg.style.transform = 'translateX('+(-move)+"px"+')';
-     stand.style.transform = 'translateX('+(-move)+"px"+')';
-     hemant.style.transform = 'translateX('+(-move)+"px"+')';
-     
-    if(count<=80){
-   board1.style.visibility = "visible";
+   
         board1.style.transform = 'translateX('+(-moveBoard1)+"px"+')';
-       moveBoard1 = moveBoard1 + 10;
+       moveBoard1 = moveBoard1 + speed;
+       move = move + speed;
+    if(count<=80){
+        board2.style.visibility = "visible";
+        board2.style.transform = 'translateX('+(-moveBoard2)+"px"+')';
+        moveBoard2 = moveBoard2 + speed;
     }
-       move = move + 10;
-if(count<101)
-    direction.style.visibility = "hidden";
     count--;
+
 }
